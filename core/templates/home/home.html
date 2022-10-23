@@ -1,0 +1,104 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'home/style.css' %}">
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bake and Take</title>
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'home/images/favicon.ico' %}">
+</head>
+<body>
+  </header>
+  <section class="about flex">
+    <div class="about__content flex">
+      <h2 class="content__title">Bake and Take</h2>
+      <h1 class="about__content__title ff-serif fs-400 fw-700">Кондиторська для душі</h1>
+      <p class="about__content__description">Торти та солодощі на замовлення </p>
+    </div>
+    <figure class="about__main__img">
+      <img src="{% static 'home/images/table_with.jpg' %}" alt="table with cakes" />
+    </figure>
+    <figure class="about__second__img desk-only">
+      <img src="{% static 'home/images/two.jpg' %}" alt="two cakes with crowns" />
+    </figure>
+  </section>
+
+
+  <section class="portfolio flex">
+    <div class="portfolio__header flex">
+      <h2 class="content__title ">Солодощі на будь-який смак</h2>
+      <h1 class="portfolio__header__title ff-serif fs-400">Пропозиції для вас</h1>
+    </div>
+    <div class="portfolio__content flex">
+      <figure class="portfolio__content__item">
+        <img src="{% static 'home/images/wedding.jpg' %}" alt="A white cake" />
+        <figcaption class="flex txt-center" style="--gap:.3em">
+          <h3 class="ff-serif fw-700 fs-300 fw-700">Весільні торти</h3>
+          <p class="fs-100 fw-500">Весільні торти під замовлення для вашої церемонії</p>
+        </figcaption>
+      </figure>
+      <figure class="portfolio__content__item">
+        <img src="{% static 'home/images/ben.jpg' %}" alt="Small cake" />
+        <figcaption class="flex txt-center" style="--gap:.3em">
+          <h3 class="ff-serif fw-700 fs-300 fw-700">Бенто-торти</h3>
+          <p class="fs-100 fw-500">Маленькі тортики до кілограма ваги</p>
+        </figcaption>
+      </figure>
+      <figure class="portfolio__content__item">
+        <img src="{% static 'home/images/cupcake.jpg' %}" alt="Cupcakes" />
+        <figcaption class="flex txt-center" style="--gap:.3em">
+          <h3 class="ff-serif fw-700 fs-300 fw-700">Набори кексів</h3>
+          <p class="fs-100 fw-500">Набір з 12 та більше кексів</p>
+        </figcaption>
+      </figure>
+      <figure class="portfolio__content__item">
+        <img src="{% static 'home/images/birthday.jpg' %}" alt="Red birthday cake" />
+        <figcaption class="flex txt-center" style="--gap:.3em">
+          <h3 class="ff-serif fw-700 fs-300 fw-700">Святкові торти</h3>
+          <p class="fs-100 fw-500">Торти вагою 3 кг</p>
+        </figcaption>
+      </figure>
+
+    </div>
+    <button class="portfolio__button ff-serif uppercase txt-dark">Замовити зараз</button>
+  </section>
+
+
+  <footer>
+    <div class="contact flex bg-green txt-white">
+      <div class="contact__phone flex">
+        <div class="contact__phone__icon">
+          <i class="uil uil-phone-volume bg-lightgreen"></i>
+        </div>
+        <div class="contact__phone__data">
+          <h3 class="ff-serif fs-300">+380 (67) 678-91-22</h3>
+          <p class="fs-100">Контактний телефон <br>
+            Наша команда чекає вашого дзвінка</p>
+        </div>
+      </div>
+      <div class="contact__email flex">
+        <div class="contact__email__icon">
+          <i class="uil uil-envelope-alt bg-lightgreen"></i>
+        </div>
+        <div class="contact__email__data">
+          <h3 class="ff-serif fs-300">@bake_and_take</h3>
+          <p class="fs-100">Instagram сторінка<br>
+            Ще більше фото наших робіт в Instagram</p>
+        </div>
+      </div>
+    </div>
+    <div class="newsletter flex bg-dark txt-white">
+      <h3 class="newsletter__title ff-serif fs-300">Реєстрація</h3>
+      <div class="newsletter__content flex">
+        <input placeholder="EMAIL" />
+        <button class="bg-pink fs-100 fw-500 uppercase">Надіслати</button>
+      </div>
+    </div>
+    <img class="footer__img desk-only" src="{% static 'home/images/img.png' %}" alt="Many cakes on a table">
+  </footer>
+</div>
+</body>
+</html>
