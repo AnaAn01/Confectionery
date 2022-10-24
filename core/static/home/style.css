@@ -82,6 +82,17 @@ h6 {
 
 /* Utility classes */
 
+.user{
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+}
+.cart{
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+}
+
 
 .ff-serif {
   font-family: var(--ff-serif);

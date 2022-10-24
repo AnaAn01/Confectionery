@@ -11,6 +11,14 @@
     <link rel="shortcut icon" type="image/x-icon" href="{% static 'home/images/favicon.ico' %}">
 </head>
 <body>
+  <div class=”Header”>
+    <button onclick="location.href = '/user'" class="user">
+    <img src="{% static 'home/images/user.jpg' %}" alt="User">
+    </button>
+    <button onclick="location.href = '/cart'" class="cart">
+    <img src="{% static 'home/images/cart.jpg' %}" alt="Cart">
+    </button>
+   </div>
   </header>
   <section class="about flex">
     <div class="about__content flex">
@@ -51,7 +59,7 @@
         <img src="{% static 'home/images/cupcake.jpg' %}" alt="Cupcakes" />
         <figcaption class="flex txt-center" style="--gap:.3em">
           <h3 class="ff-serif fw-700 fs-300 fw-700">Набори кексів</h3>
-          <p class="fs-100 fw-500">Набір з 12 та більше кексів</p>
+          <p class="fs-100 fw-500">Набір з 6 та більше кексів</p>
         </figcaption>
       </figure>
       <figure class="portfolio__content__item">
@@ -63,7 +71,7 @@
       </figure>
 
     </div>
-    <button class="portfolio__button ff-serif uppercase txt-dark">Замовити зараз</button>
+    <button onclick="location.href = '/catalog'" class="portfolio__button ff-serif uppercase txt-dark">Замовити зараз</button>
   </section>
 
 
